@@ -1,0 +1,28 @@
+// Aditya Singh Gajawat All Rights Reserved
+
+#pragma once
+#include "NativeGameplayTags.h" 
+
+namespace WarriorGameplayTags
+{
+	/** INPUT TAGS **/
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Move);
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Look);
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_EquipKatana);
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_UnequipKatana);
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Attack_Light_Katana);
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(InputTag_Attack_Heavy_Katana);
+
+	/** PLAYER TAGS **/
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Weapon_Katana);
+	
+	/*ABILITY TAGS (MAINLY USED FOR BLOCKING OTHER ABILITY WHILE DOING ONE)*/
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_OnEquip_Katana);
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_OnUnequip_Katana);
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Attack_Light_Katana);
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Ability_Attack_Heavy_Katana);
+
+	/** GAMEPLAY EVENTS **/
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_EquipKatana);
+	GAS_RPG_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_UnequipKatana);
+}
